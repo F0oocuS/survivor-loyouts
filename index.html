@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="./src/output.css">
+	</head>
+
+	<body>
+		<header class="bg-gray-800">
+			<div class="container p-4 mx-auto flex items-center">
+				<div class="flex items-center justify-center gap-2">
+					<img src="src/icons/bonfire.svg" alt="">
+
+					<div class="font-roboto-mono font-medium text-2xl text-white">Survivor</div>
+				</div>
+
+				<nav class="mx-auto flex justify-center">
+					<ul class="flex gap-9">
+						<li><a href="" class="text-white text-base font-medium font-roboto-mono">Ігри</a></li>
+						<li><a href="" class="text-white text-base font-medium font-roboto-mono">Публічні паки</a></li>
+						<li><a href="" class="text-white text-base font-medium font-roboto-mono">Підписка</a></li>
+						<li><a href="" class="text-white text-base font-medium font-roboto-mono">Рейтинг</a></li>
+						<li>
+							<a href="" class="text-white text-base font-medium font-roboto-mono flex gap-1">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.89883 10.1624C9.22383 10.1624 8.73633 10.7624 8.73633 11.4374C8.73633 12.1124 9.26133 12.7124 9.89883 12.7124C10.5738 12.7124 11.0613 12.1499 11.0613 11.4374C11.0988 10.7249 10.5738 10.1624 9.89883 10.1624Z" fill="white"/>
+									<path d="M14.1 12.675C14.742 12.675 15.2625 12.1042 15.2625 11.4C15.2625 10.6958 14.742 10.125 14.1 10.125C13.458 10.125 12.9375 10.6958 12.9375 11.4C12.9375 12.1042 13.458 12.675 14.1 12.675Z" fill="white"/>
+									<path d="M19.7619 0.375H4.2369C2.92441 0.375 1.83691 1.425 1.83691 2.7375V18.45C1.83691 19.7625 2.88691 20.8125 4.1994 20.8125H17.3619L16.7244 18.7125L18.1869 20.1L19.6119 21.4125L22.0869 23.625V2.7375C22.1994 1.425 21.0744 0.375 19.7619 0.375ZM15.2619 15.525C15.2619 15.525 14.8494 15.0375 14.4744 14.5875C16.0119 14.175 16.5744 13.2 16.5744 13.2C16.0869 13.5 15.6369 13.725 15.2619 13.875C14.6994 14.1375 14.0994 14.2875 13.5744 14.3625C12.4494 14.5875 11.4744 14.5125 10.5744 14.3625C9.8994 14.25 9.3744 14.0625 8.8869 13.875C8.6244 13.7625 8.2869 13.65 8.0244 13.5C7.9869 13.5 7.9869 13.4625 7.9119 13.4625C7.9119 13.4625 7.8744 13.4625 7.8744 13.425C7.6494 13.3125 7.5744 13.2 7.5744 13.2C7.5744 13.2 8.1744 14.1375 9.6369 14.5875C9.2619 15 8.8494 15.525 8.8494 15.525C6.2619 15.4125 5.3244 13.8 5.3244 13.8C5.3244 10.05 7.0119 7.05 7.0119 7.05C8.6994 5.775 10.2744 5.85 10.2744 5.85L10.3869 6C8.2494 6.5625 7.3119 7.5 7.3119 7.5C7.3119 7.5 7.5744 7.35 7.9869 7.2C9.2619 6.675 10.1994 6.525 10.6119 6.45C10.6494 6.45 10.7244 6.45 10.8369 6.45C11.5119 6.3375 12.3744 6.3375 13.1619 6.45C14.2869 6.5625 15.4494 6.9375 16.6494 7.575C16.6494 7.575 15.7494 6.7125 13.7244 6.1125L13.8744 5.8875C13.8744 5.8875 15.4494 5.85 17.1369 7.0875C17.1369 7.0875 18.8244 10.0875 18.8244 13.8375C18.8619 13.8 17.8494 15.4875 15.2619 15.525Z" fill="white"/>
+								</svg>
+
+								Discord
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="flex items-center gap-9">
+					<div class="flex gap-2 items-center">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" fill="white"/>
+						</svg>
+
+						<span class="text-white text-base font-medium font-roboto-mono uppercase">ua</span>
+
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
+						</svg>
+					</div>
+
+					<button class="bg-white py-2 px-6 rounded-md text-base font-medium font-roboto-mono">Профіль</button>
+				</div>
+			</div>
+		</header>
+		
+		<div class="relative">
+			<div class="absolute top-0 left-0 w-full h-full -z-20">
+				<img src="src/images/banner.jfif" alt="" class="w-full h-full object-cover">
+			</div>
+
+			<div class="absolute top-0 left-0 w-full h-full -z-10 bg-black bg-opacity-60"></div>
+
+			<div class="container mx-auto py-12">
+				<h1 class="mb-1 font-roboto font-medium text-white text-5xl leading-tight">Бункер</h1>
+
+				<div class="flex gap-32">
+					<div class="flex-1">
+						<div class="pt-5 pb-9 border-t-2 border-b-2 border-cyan-400">
+							<ul class="mb-5 flex gap-2">
+								<li class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 4.99992C10.9167 4.99992 11.6667 5.74992 11.6667 6.66659C11.6667 7.58325 10.9167 8.33325 10 8.33325C9.08337 8.33325 8.33337 7.58325 8.33337 6.66659C8.33337 5.74992 9.08337 4.99992 10 4.99992ZM10 13.3333C12.25 13.3333 14.8334 14.4083 15 14.9999H5.00004C5.19171 14.3999 7.75837 13.3333 10 13.3333ZM10 3.33325C8.15837 3.33325 6.66671 4.82492 6.66671 6.66659C6.66671 8.50825 8.15837 9.99992 10 9.99992C11.8417 9.99992 13.3334 8.50825 13.3334 6.66659C13.3334 4.82492 11.8417 3.33325 10 3.33325ZM10 11.6666C7.77504 11.6666 3.33337 12.7833 3.33337 14.9999V16.6666H16.6667V14.9999C16.6667 12.7833 12.225 11.6666 10 11.6666Z" fill="#444444"/>
+									</svg>
+
+									2-5 гравців
+								</li>
+
+								<li class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.4166 6.66663H9.16661V11.6666L13.1249 14.0416L13.7499 13.0166L10.4166 11.0416V6.66663ZM14.4474 1.5083L18.2866 4.71247L17.2199 5.99163L13.3783 2.78913L14.4474 1.5083ZM5.55244 1.5083L6.62078 2.7883L2.78078 5.99163L1.71411 4.71163L5.55244 1.5083ZM9.99994 3.3333C5.85828 3.3333 2.49994 6.69164 2.49994 10.8333C2.49994 14.975 5.85828 18.3333 9.99994 18.3333C14.1416 18.3333 17.4999 14.975 17.4999 10.8333C17.4999 6.69164 14.1416 3.3333 9.99994 3.3333ZM9.99994 16.6666C6.78328 16.6666 4.16661 14.05 4.16661 10.8333C4.16661 7.61663 6.78328 4.99997 9.99994 4.99997C13.2166 4.99997 15.8333 7.61663 15.8333 10.8333C15.8333 14.05 13.2166 16.6666 9.99994 16.6666Z" fill="#444444"/>
+									</svg>
+
+									60 хв
+								</li>
+
+								<li class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center">tag</li>
+							</ul>
+
+							<p class="mb-5 text-white font-roboto text-base">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea ex exercitationem nam quam recusandae sint! Earum itaque, natus neque perspiciatis sapiente sed tenetur vel? Animi dolore exercitationem quos vel!
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea ex exercitationem nam quam recusandae sint! Earum itaque, natus neque perspiciatis sapiente sed tenetur vel? Animi dolore exercitationem quos vel!
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea ex exercitationem nam quam recusandae sint! Earum itaque, natus neque perspiciatis sapiente sed tenetur vel? Animi dolore exercitationem quos vel!
+							</p>
+
+							<div class="flex gap-5">
+								<button class="bg-white py-2 px-6 rounded-md text-base font-medium font-roboto-mono">Читати правила</button>
+								<button class="bg-white py-2 px-6 rounded-md text-base font-medium font-roboto-mono">Кнопка</button>
+								<button class="bg-white py-2 px-3 rounded-md text-base font-medium font-roboto-mono">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" fill="#111827"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="py-5">
+							<div class="mb-1 flex gap-5 items-center justify-between">
+								<h2 class="font-roboto text-white text-2xl font-medium">Кастомні паки для гри</h2>
+
+								<a href="" class="flex items-center gap-1 text-sm text-white font-roboto-mono underline">
+									Більше
+
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 14.59L10.58 10L6 5.41L7.41 4L13.41 10L7.41 16L6 14.59Z" fill="white"/>
+									</svg>
+								</a>
+							</div>
+
+							<p class="mb-5 text-white text-base">Обирай публічний, або створюй свій власний.</p>
+
+							<div class="flex gap-7">
+								<div class="flex-1">
+									<div class="mb-3 w-full h-28 rounded-lg overflow-hidden">
+										<img src="src/images/cat.jpg" alt="" class="w-full h-full object-cover">
+									</div>
+
+									<h4 class="mb-1 text-white font-roboto text-base font-medium">Dota. Wasteland Caves</h4>
+
+									<p class="text-white font-roboto text-sm">Створив: shendelwisp</p>
+								</div>
+
+								<div class="flex-1">
+									<div class="mb-3 w-full h-28 rounded-lg overflow-hidden">
+										<img src="src/images/cat.jpg" alt="" class="w-full h-full object-cover">
+									</div>
+
+									<h4 class="mb-1 text-white font-roboto text-base font-medium">Dota. Wasteland Caves</h4>
+
+									<p class="text-white font-roboto text-sm">Створив: shendelwisp</p>
+								</div>
+
+								<div class="flex-1">
+									<div class="mb-3 w-full h-28 rounded-lg overflow-hidden">
+										<img src="src/images/cat.jpg" alt="" class="w-full h-full object-cover">
+									</div>
+
+									<h4 class="mb-1 text-white font-roboto text-base font-medium">Dota. Wasteland Caves</h4>
+
+									<p class="text-white font-roboto text-sm">Створив: shendelwisp</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-1">
+						<div class="p-6 bg-gray-700 rounded-xl">
+							<h3 class="mb-4 text-3xl text-white font-roboto font-medium">Грати зараз</h3>
+
+							<p class="mb-3 text-xl text-white font-roboto-mono font-medium">Створити нову кімнату:</p>
+
+							<button class="mb-4 bg-white py-2 px-6 rounded-md text-base font-medium font-roboto-mono w-full">Створити кімнату</button>
+
+							<div class="mb-4 py-4 border-t-2 border-b-2 border-gray-400">
+								<p class="mb-3 text-xl text-white font-roboto-mono font-medium">Приєднатись до друзів:</p>
+
+								<div class="flex gap-2 items-center">
+									<span class=" font-roboto text-white font-medium text-base">Код кімнати</span>
+									<input type="text" class="flex-1 py-2 px-4 font-roboto text-base outline-none rounded-md" placeholder="XXXXXX">
+									<button class="py-2 px-3 font-roboto-mono text-white font-medium text-base border-white border rounded-md">Приєднатись</button>
+								</div>
+							</div>
+
+							<p class="mb-3 text-xl text-white font-roboto-mono font-medium">Доступні публічні лобі:</p>
+
+							<ul class="rounded-md bg-white">
+								<li class="py-2 px-4 flex justify-between items-center [&:not(:last-child)]:border-b border-gray-400">
+									<div class="">
+										<div class="font-roboto-mono text-base text-black font-medium">Room name</div>
+										<div class="font-roboto-mono text-sm text-gray-500">XXXXXX</div>
+									</div>
+
+									<div class="flex gap-3 items-center">
+										<div class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center border border-gray-400 rounded-full">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 4.99992C10.9167 4.99992 11.6667 5.74992 11.6667 6.66659C11.6667 7.58325 10.9167 8.33325 10 8.33325C9.08337 8.33325 8.33337 7.58325 8.33337 6.66659C8.33337 5.74992 9.08337 4.99992 10 4.99992ZM10 13.3333C12.25 13.3333 14.8334 14.4083 15 14.9999H5.00004C5.19171 14.3999 7.75837 13.3333 10 13.3333ZM10 3.33325C8.15837 3.33325 6.66671 4.82492 6.66671 6.66659C6.66671 8.50825 8.15837 9.99992 10 9.99992C11.8417 9.99992 13.3334 8.50825 13.3334 6.66659C13.3334 4.82492 11.8417 3.33325 10 3.33325ZM10 11.6666C7.77504 11.6666 3.33337 12.7833 3.33337 14.9999V16.6666H16.6667V14.9999C16.6667 12.7833 12.225 11.6666 10 11.6666Z" fill="#444444"/>
+											</svg>
+
+											2/5
+										</div>
+
+										<button class="py-1 px-3 border border-black rounded-md">Приєднатись</button>
+									</div>
+								</li>
+
+								<li class="py-2 px-4 flex justify-between items-center [&:not(:last-child)]:border-b border-gray-400">
+									<div class="">
+										<div class="font-roboto-mono text-base text-black font-medium">Room name</div>
+										<div class="font-roboto-mono text-sm text-gray-500">XXXXXX</div>
+									</div>
+
+									<div class="flex gap-3 items-center">
+										<div class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center border border-gray-400 rounded-full">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 4.99992C10.9167 4.99992 11.6667 5.74992 11.6667 6.66659C11.6667 7.58325 10.9167 8.33325 10 8.33325C9.08337 8.33325 8.33337 7.58325 8.33337 6.66659C8.33337 5.74992 9.08337 4.99992 10 4.99992ZM10 13.3333C12.25 13.3333 14.8334 14.4083 15 14.9999H5.00004C5.19171 14.3999 7.75837 13.3333 10 13.3333ZM10 3.33325C8.15837 3.33325 6.66671 4.82492 6.66671 6.66659C6.66671 8.50825 8.15837 9.99992 10 9.99992C11.8417 9.99992 13.3334 8.50825 13.3334 6.66659C13.3334 4.82492 11.8417 3.33325 10 3.33325ZM10 11.6666C7.77504 11.6666 3.33337 12.7833 3.33337 14.9999V16.6666H16.6667V14.9999C16.6667 12.7833 12.225 11.6666 10 11.6666Z" fill="#444444"/>
+											</svg>
+
+											2/5
+										</div>
+
+										<button class="py-1 px-3 border border-black rounded-md">Приєднатись</button>
+									</div>
+								</li>
+
+								<li class="py-2 px-4 flex justify-between items-center [&:not(:last-child)]:border-b border-gray-400">
+									<div class="">
+										<div class="font-roboto-mono text-base text-black font-medium">Room name</div>
+										<div class="font-roboto-mono text-sm text-gray-500">XXXXXX</div>
+									</div>
+
+									<div class="flex gap-3 items-center">
+										<div class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center border border-gray-400 rounded-full">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 4.99992C10.9167 4.99992 11.6667 5.74992 11.6667 6.66659C11.6667 7.58325 10.9167 8.33325 10 8.33325C9.08337 8.33325 8.33337 7.58325 8.33337 6.66659C8.33337 5.74992 9.08337 4.99992 10 4.99992ZM10 13.3333C12.25 13.3333 14.8334 14.4083 15 14.9999H5.00004C5.19171 14.3999 7.75837 13.3333 10 13.3333ZM10 3.33325C8.15837 3.33325 6.66671 4.82492 6.66671 6.66659C6.66671 8.50825 8.15837 9.99992 10 9.99992C11.8417 9.99992 13.3334 8.50825 13.3334 6.66659C13.3334 4.82492 11.8417 3.33325 10 3.33325ZM10 11.6666C7.77504 11.6666 3.33337 12.7833 3.33337 14.9999V16.6666H16.6667V14.9999C16.6667 12.7833 12.225 11.6666 10 11.6666Z" fill="#444444"/>
+											</svg>
+
+											2/5
+										</div>
+
+										<button class="py-1 px-3 border border-black rounded-md">Приєднатись</button>
+									</div>
+								</li>
+
+								<li class="py-2 px-4 flex justify-between items-center [&:not(:last-child)]:border-b border-gray-400">
+									<div class="">
+										<div class="font-roboto-mono text-base text-black font-medium">Room name</div>
+										<div class="font-roboto-mono text-sm text-gray-500">XXXXXX</div>
+									</div>
+
+									<div class="flex gap-3 items-center">
+										<div class="px-2 py-1 bg-white rounded-full font-roboto text-black text-sm leading-4 flex gap-2 items-center border border-gray-400 rounded-full">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 4.99992C10.9167 4.99992 11.6667 5.74992 11.6667 6.66659C11.6667 7.58325 10.9167 8.33325 10 8.33325C9.08337 8.33325 8.33337 7.58325 8.33337 6.66659C8.33337 5.74992 9.08337 4.99992 10 4.99992ZM10 13.3333C12.25 13.3333 14.8334 14.4083 15 14.9999H5.00004C5.19171 14.3999 7.75837 13.3333 10 13.3333ZM10 3.33325C8.15837 3.33325 6.66671 4.82492 6.66671 6.66659C6.66671 8.50825 8.15837 9.99992 10 9.99992C11.8417 9.99992 13.3334 8.50825 13.3334 6.66659C13.3334 4.82492 11.8417 3.33325 10 3.33325ZM10 11.6666C7.77504 11.6666 3.33337 12.7833 3.33337 14.9999V16.6666H16.6667V14.9999C16.6667 12.7833 12.225 11.6666 10 11.6666Z" fill="#444444"/>
+											</svg>
+
+											2/5
+										</div>
+
+										<button class="py-1 px-3 border border-black rounded-md">Приєднатись</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-gray-900">
+			<div class="container mx-auto py-16">
+				<div class="p-5 rounded-xl bg-gray-300">
+					<div class="py-3 px-4 flex bg-gray-600">
+						<div class="flex-1 text-white font-roboto font-medium text-lg">Нікнейм</div>
+						<div class="flex-1 text-white font-roboto font-medium text-lg text-center">Рейтинг</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+
+					<div class="py-3 px-4 flex bg-white [&:not(:last-child)]:border-b border-gray-400">
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base">Нікнейм</div>
+						<div class="flex-1 text-gray-600 font-roboto font-medium text-base text-center">123123</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="container mx-auto py-16 flex flex-col gap-6">
+				<h3 class="text-3xl text-black font-roboto font-medium">Підписка</h3>
+
+				<ul class="flex gap-8">
+					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
+
+						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
+
+						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
+					</li>
+
+					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
+
+						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
+
+						<div class="mb-4 font-roboto text-base text-gray-500">($2.67 в місяць)</div>
+
+						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
+					</li>
+
+					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
+
+						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
+
+						<div class="mb-4 font-roboto text-base text-gray-500">($2.67 в місяць)</div>
+
+						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
+					</li>
+
+					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
+
+						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
+
+						<div class="mb-4 font-roboto text-base text-gray-500">($2.67 в місяць)</div>
+
+						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
+					</li>
+				</ul>
+
+				<div class="">
+					<div class="py-3 px-4 flex bg-gray-600">
+						<div class="flex-1 text-white font-roboto font-medium text-lg">Можливості</div>
+						<div class="flex-1 text-white font-roboto font-medium text-lg text-center">Без підписки</div>
+						<div class="flex-1 text-white font-roboto font-medium text-lg text-center">З підпискою</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Зміна неонів</div>
+						<div class="flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">Обмежена кількість  кольорів</div>
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">Усі відтінки</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Гіфки як аватарки</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
+							</svg>
+							Неможливо
+						</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
+							</svg>
+
+							Можливо
+						</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Оновлення паків</div>
+						<div class="flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">Обмежена кількість разів</div>
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">Безлімітно</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Переглянути паки</div>
+						<div class="flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">Частково</div>
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">Повністю</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Приватний пак</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
+							</svg>
+
+							Неможливо
+						</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
+							</svg>
+
+							Можливо
+						</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Обрати пак</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
+							</svg>
+
+							Неможливо
+						</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
+							</svg>
+							Можливо
+						</div>
+					</div>
+
+					<div class="flex bg-white border-b border-gray-400">
+						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Аватар паку</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
+							</svg>
+
+							Неможливо
+						</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
+							</svg>
+
+							Можливо
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-gray-800">
+			<div class="container mx-auto py-32">
+				<div class="flex gap-20">
+					<div class="flex-1 w-full">
+						<div class="mb-5 flex items-center gap-2">
+							<img src="src/icons/bonfire.svg" alt="">
+
+							<div class="font-roboto-mono font-medium text-2xl text-white">Survivor</div>
+						</div>
+						
+						<p class="font-roboto font-medium text-gray-400 text-sm">Sed ut perspiciatis undmnis is iste natus error sit amet voluptatem totam rem aperiam.</p>
+					</div>
+
+					<div class="flex-1">
+						<h6 class="mb-9 font-roboto font-semibold text-lg text-white">Resources</h6>
+
+						<ul class="flex flex-col gap-3 justify-items-start">
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Saas Development</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Our Products</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">User Strategy</a></li>
+						</ul>
+					</div>
+
+					<div class="flex-1">
+						<h6 class="mb-9 font-roboto font-semibold text-lg text-white">Company</h6>
+
+						<ul class="flex flex-col gap-3 justify-items-start">
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">About Landio</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Contact & Support</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Success History</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Setting & Privacy</a></li>
+						</ul>
+					</div>
+
+					<div class="flex-1">
+						<h6 class="mb-9 font-roboto font-semibold text-lg text-white">Quick Links</h6>
+
+						<ul class="flex flex-col gap-3 justify-items-start">
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Premium Support</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Our Services</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Know Our Team</a></li>
+							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Download App</a></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
