@@ -20,17 +20,24 @@
 
 			<div class="absolute top-0 left-0 w-full h-full -z-10 bg-black bg-opacity-60"></div>
 
-			<div class="container mx-auto">
-				<header class="">
-					<div class="p-4 flex items-center">
+
+			<header class="relative bg-gray-800 lg:bg-transparent">
+				<div class="container mx-auto">
+					<div class="p-2 flex items-center relative lg:p-4">
 						<div class="flex items-center justify-center gap-2">
 							<img src="src/icons/bonfire.svg" alt="">
 
 							<div class="font-roboto-mono font-medium text-2xl text-white">Survivor</div>
 						</div>
 
-						<nav class="mx-auto flex justify-center">
-							<ul class="flex gap-9">
+						<button class="ml-auto flex flex-col gap-2 items-center justify-center lg:hidden">
+							<span class="inline-block h-0.5 w-9 bg-white"></span>
+							<span class="inline-block h-0.5 w-9 bg-white"></span>
+							<span class="inline-block h-0.5 w-9 bg-white"></span>
+						</button>
+
+						<nav class="p-4 flex absolute top-full left-0 w-full bg-gray-800 lg:mx-auto lg:justify-center lg:static lg:bg-transparent lg:w-auto lg:p-0">
+							<ul class="flex flex-col lg:flex-row gap-4">
 								<li><a href="" class="text-white text-base font-medium font-roboto-mono">Ігри</a></li>
 								<li><a href="" class="text-white text-base font-medium font-roboto-mono">Публічні паки</a></li>
 								<li><a href="" class="text-white text-base font-medium font-roboto-mono">Підписка</a></li>
@@ -49,7 +56,7 @@
 							</ul>
 						</nav>
 
-						<div class="flex items-center gap-9 md:hidden">
+						<div class="hidden items-center gap-9 lg:flex">
 							<div class="flex gap-2 items-center">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" fill="white"/>
@@ -65,8 +72,10 @@
 							<button class="bg-white py-2 px-6 rounded-md text-base font-medium font-roboto-mono">Профіль</button>
 						</div>
 					</div>
-				</header>
+				</div>
+			</header>
 
+			<div class="container mx-auto px-2">
 				<div class="py-16">
 					<h1 class="mb-5 max-w-screen-md mx-auto font-roboto-mono font-bold text-4xl text-center text-white">Грай в “Бункер” рідною мовою!</h1>
 
@@ -93,7 +102,7 @@
 							</div>
 						</div>
 
-						<div class="flex-1 p-6 h-60 flex flex-col relative rounded-2xl overflow-hidden">
+						<div class="flex-1 p-6 h-60 hidden flex-col relative rounded-2xl overflow-hidden md:flex">
 							<img src="src/images/cat.jpg" alt="" class="w-full h-full object-cover absolute top-0 left-0 -z-10">
 
 							<div class="font-robot-mono font-bold text-base text-white">10.10.2010</div>
@@ -105,7 +114,7 @@
 							</div>
 						</div>
 
-						<div class="flex-1 p-6 h-60 flex flex-col relative rounded-2xl overflow-hidden">
+						<div class="flex-1 p-6 h-60 hidden flex-col relative rounded-2xl overflow-hidden lg:flex">
 							<img src="src/images/cat.jpg" alt="" class="w-full h-full object-cover absolute top-0 left-0 -z-10">
 
 							<div class="font-robot-mono font-bold text-base text-white">10.10.2010</div>
@@ -121,10 +130,10 @@
 			</div>
 		</div>
 
-		<div class="bg-gray-800">
+		<div class="px-2 bg-gray-800">
 			<div class="container mx-auto py-12">
-				<div class="flex gap-4">
-					<div class="basis-1/2 py-44">
+				<div class="flex gap-4 flex-col lg:flex-row ">
+					<div class="basis-1/2 py-5 lg:py-44 text-center lg:text-left">
 						<h3 class="mb-5 font-roboto-mono font-bold text-4xl text-white">Що на тебе чекає</h3>
 
 						<p class="font-roboto-mono font-light text-lg text-white">Для цього потрібно мінімальне зусилля, хоча б тому, що потрібно працювати з кимось, хто використовує обладнання для виконання завдань.</p>
@@ -137,14 +146,14 @@
 			</div>
 		</div>
 
-		<div class="bg-gray-700">
+		<div class="px-2 bg-gray-700">
 			<div class="container mx-auto py-8">
-				<div class="flex gap-4">
+				<div class="flex flex-col-reverse gap-4 lg:flex-row">
 					<div class="basis-3/5">
 						<img src="src/images/pc.png" alt="" class="w-full h-full object-contain">
 					</div>
 
-					<div class="basis-2/5 py-44">
+					<div class="basis-2/5 py-5 lg:py-44 text-center lg:text-left">
 						<h3 class="mb-5 font-roboto-mono font-bold text-4xl text-white">Що на тебе чекає</h3>
 
 						<p class="font-roboto-mono font-light text-lg text-white">Для цього потрібно мінімальне зусилля, хоча б тому, що потрібно працювати з кимось, хто використовує обладнання для виконання завдань.</p>
@@ -153,12 +162,12 @@
 			</div>
 		</div>
 
-		<div>
-			<div class="container mx-auto py-16 flex flex-col gap-6">
+		<div class="px-2">
+			<div class="container mx-auto py-6 flex flex-col gap-6 lg:py-16">
 				<h3 class="text-3xl text-black font-roboto font-medium">Підписка</h3>
 
-				<ul class="flex gap-8">
-					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+				<ul class="flex gap-8 flex-wrap">
+					<li class="w-full p-6 border border-gray-400 rounded-lg flex flex-col sm:flex-1">
 						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
 
 						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
@@ -166,17 +175,7 @@
 						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
 					</li>
 
-					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
-						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
-
-						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
-
-						<div class="mb-4 font-roboto text-base text-gray-500">($2.67 в місяць)</div>
-
-						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
-					</li>
-
-					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+					<li class="w-full p-6 border border-gray-400 rounded-lg flex flex-col sm:flex-1">
 						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
 
 						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
@@ -186,7 +185,17 @@
 						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
 					</li>
 
-					<li class="flex-1 p-6 border border-gray-400 rounded-lg flex flex-col">
+					<li class="w-full p-6 border border-gray-400 rounded-lg flex flex-col sm:flex-1">
+						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
+
+						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
+
+						<div class="mb-4 font-roboto text-base text-gray-500">($2.67 в місяць)</div>
+
+						<button class="mt-auto bg-black py-2 px-6 text-white rounded-md text-base font-medium font-roboto-mono w-full">Підписатись</button>
+					</li>
+
+					<li class="w-full p-6 border border-gray-400 rounded-lg flex flex-col sm:flex-1">
 						<h5 class="mb-3 text-black font-roboto font-semibold text-lg">Duclair</h5>
 
 						<div class="mb-2 font-roboto text-4xl font-bold">$5.99<span class="text-base text-gray-500 font-medium">/ 1 місяць</span></div>
@@ -198,27 +207,27 @@
 				</ul>
 
 				<div class="">
-					<div class="py-3 px-4 flex bg-gray-600">
-						<div class="flex-1 text-white font-roboto font-medium text-lg">Можливості</div>
-						<div class="flex-1 text-white font-roboto font-medium text-lg text-center">Без підписки</div>
-						<div class="flex-1 text-white font-roboto font-medium text-lg text-center">З підпискою</div>
+					<div class="py-1 px-2 flex bg-gray-600 md:py-3 md:px-4">
+						<div class="flex-1 text-white font-roboto font-medium text-md md:text-lg">Можливості</div>
+						<div class="flex-1 text-white font-roboto font-medium text-md md:text-lg text-center">Без підписки</div>
+						<div class="flex-1 text-white font-roboto font-medium text-md md:text-lg text-center">З підпискою</div>
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Зміна неонів</div>
-						<div class="flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">Обмежена кількість  кольорів</div>
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">Усі відтінки</div>
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Зміна неонів</div>
+						<div class="flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base text-center md:px-3">Обмежена кількість  кольорів</div>
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base text-center md:px-3">Усі відтінки</div>
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Гіфки як аватарки</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Гіфки як аватарки</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
 							</svg>
 							Неможливо
 						</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
 							</svg>
@@ -228,27 +237,27 @@
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Оновлення паків</div>
-						<div class="flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">Обмежена кількість разів</div>
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">Безлімітно</div>
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Оновлення паків</div>
+						<div class="flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">Обмежена кількість разів</div>
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">Безлімітно</div>
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Переглянути паки</div>
-						<div class="flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">Частково</div>
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">Повністю</div>
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Переглянути паки</div>
+						<div class="flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">Частково</div>
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">Повністю</div>
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Приватний пак</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Приватний пак</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
 							</svg>
 
 							Неможливо
 						</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
 							</svg>
@@ -258,15 +267,15 @@
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Обрати пак</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Обрати пак</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
 							</svg>
 
 							Неможливо
 						</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
 							</svg>
@@ -275,15 +284,15 @@
 					</div>
 
 					<div class="flex bg-white border-b border-gray-400">
-						<div class="flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base">Аватар паку</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3">Аватар паку</div>
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M6.99996 14.1666L9.99996 11.1666L13 14.1666L14.1666 13L11.1666 9.99996L14.1666 6.99996L13 5.83329L9.99996 8.83329L6.99996 5.83329L5.83329 6.99996L8.83329 9.99996L5.83329 13L6.99996 14.1666ZM9.99996 18.3333C8.84718 18.3333 7.76385 18.1145 6.74996 17.677C5.73607 17.2395 4.85413 16.6458 4.10413 15.8958C3.35413 15.1458 2.76038 14.2638 2.32288 13.25C1.88538 12.2361 1.66663 11.1527 1.66663 9.99996C1.66663 8.84718 1.88538 7.76385 2.32288 6.74996C2.76038 5.73607 3.35413 4.85413 4.10413 4.10413C4.85413 3.35413 5.73607 2.76038 6.74996 2.32288C7.76385 1.88538 8.84718 1.66663 9.99996 1.66663C11.1527 1.66663 12.2361 1.88538 13.25 2.32288C14.2638 2.76038 15.1458 3.35413 15.8958 4.10413C16.6458 4.85413 17.2395 5.73607 17.677 6.74996C18.1145 7.76385 18.3333 8.84718 18.3333 9.99996C18.3333 11.1527 18.1145 12.2361 17.677 13.25C17.2395 14.2638 16.6458 15.1458 15.8958 15.8958C15.1458 16.6458 14.2638 17.2395 13.25 17.677C12.2361 18.1145 11.1527 18.3333 9.99996 18.3333ZM9.99996 16.6666C11.8611 16.6666 13.4375 16.0208 14.7291 14.7291C16.0208 13.4375 16.6666 11.8611 16.6666 9.99996C16.6666 8.13885 16.0208 6.56246 14.7291 5.27079C13.4375 3.97913 11.8611 3.33329 9.99996 3.33329C8.13885 3.33329 6.56246 3.97913 5.27079 5.27079C3.97913 6.56246 3.33329 8.13885 3.33329 9.99996C3.33329 11.8611 3.97913 13.4375 5.27079 14.7291C6.56246 16.0208 8.13885 16.6666 9.99996 16.6666Z" fill="#B3261E"/>
 							</svg>
 
 							Неможливо
 						</div>
-						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-4 bg-gray-100 text-gray-600 font-roboto font-medium text-base text-center">
+						<div class="flex items-center justify-center gap-2 flex-1 py-3 px-1 bg-gray-100 text-gray-600 font-roboto font-medium text-sm md:text-base md:px-3 text-center">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.9375 13L13.8958 8.0625L12.8333 7L8.9375 10.875L7.16667 9.125L6.10417 10.1875L8.9375 13ZM10 18C8.90278 18 7.86806 17.7917 6.89583 17.375C5.92361 16.9583 5.07292 16.3854 4.34375 15.6562C3.61458 14.9271 3.04167 14.0764 2.625 13.1042C2.20833 12.1319 2 11.0972 2 10C2 8.88889 2.20833 7.85069 2.625 6.88542C3.04167 5.92014 3.61458 5.07292 4.34375 4.34375C5.07292 3.61458 5.92361 3.04167 6.89583 2.625C7.86806 2.20833 8.90278 2 10 2C11.1111 2 12.1493 2.20833 13.1146 2.625C14.0799 3.04167 14.9271 3.61458 15.6562 4.34375C16.3854 5.07292 16.9583 5.92014 17.375 6.88542C17.7917 7.85069 18 8.88889 18 10C18 11.0972 17.7917 12.1319 17.375 13.1042C16.9583 14.0764 16.3854 14.9271 15.6562 15.6562C14.9271 16.3854 14.0799 16.9583 13.1146 17.375C12.1493 17.7917 11.1111 18 10 18ZM10 16.5C11.8056 16.5 13.3403 15.8681 14.6042 14.6042C15.8681 13.3403 16.5 11.8056 16.5 10C16.5 8.19444 15.8681 6.65972 14.6042 5.39583C13.3403 4.13194 11.8056 3.5 10 3.5C8.19444 3.5 6.65972 4.13194 5.39583 5.39583C4.13194 6.65972 3.5 8.19444 3.5 10C3.5 11.8056 4.13194 13.3403 5.39583 14.6042C6.65972 15.8681 8.19444 16.5 10 16.5Z" fill="#02914D"/>
 							</svg>
@@ -295,150 +304,149 @@
 			</div>
 		</div>
 		
-		<div class="bg-gray-900">
+		<div class="bg-gray-900 px-2">
 			<div class="container mx-auto">
 				<div class="py-16">
 					<h3 class="mb-5 font-roboto-mono font-bold text-4xl text-white text-center uppercase">f.a.q</h3>
 
-					<ul class="p-10 rounded-2xl bg-gray-800">
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+					<ul class="p-4 rounded-2xl bg-gray-800 md:p-10">
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
 
-						<li class="p-6 pr-16 [&:not(:last-child)]:border-b border-white relative cursor-pointer">
-							<h5 class="text-white font-roboto-mono font-bold text-2xl">Як зробити підписку?</h5>
+						<li class="p-4 pr-10 [&:not(:last-child)]:border-b border-white relative cursor-pointer md:p-6 md:p-16">
+							<h5 class="text-white font-roboto-mono font-bold text-lg md:text-2xl">Як зробити підписку?</h5>
 
-							<div class="absolute top-6 right-6">
+							<div class="absolute top-3 right-3 md:top-6 md:right-6">
 								<svg width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M5.41 7L10 11.58L14.59 7L16 8.41L10 14.41L4 8.41L5.41 7Z" fill="white"/>
 								</svg>
 							</div>
 
-							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal text-base transition-all">
+							<div class="max-h-0 text-white overflow-hidden font-roboto-mono font-normal  text-md md:text-base transition-all">
 								<p class="pt-2">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores at beatae consectetur, culpa debitis et, explicabo harum illum modi molestias nisi non nulla perspiciatis quos ratione rem voluptates.
 								</p>
 							</div>
 						</li>
-
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<footer class="bg-gray-800">
-			<div class="container mx-auto py-32">
-				<div class="flex gap-20">
-					<div class="flex-1 w-full">
-						<div class="mb-5 flex items-center gap-2">
+		<footer class="bg-gray-800 px-2">
+			<div class="container mx-auto py-6 md:py-32">
+				<div class="flex flex-col gap-6 md:flex-row md:gap-10 lg:gap-20">
+					<div class="flex-1 w-full text-center md:text-left">
+						<div class="mb-5 flex items-center justify-center gap-2 md:justify-start">
 							<img src="src/icons/bonfire.svg" alt="">
 
 							<div class="font-roboto-mono font-medium text-2xl text-white">Survivor</div>
@@ -448,7 +456,7 @@
 					</div>
 
 					<div class="flex-1">
-						<h6 class="mb-9 font-roboto font-semibold text-lg text-white">Resources</h6>
+						<h6 class="mb-3 font-roboto font-semibold text-lg text-white md:mb-9">Resources</h6>
 
 						<ul class="flex flex-col gap-3 justify-items-start">
 							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Saas Development</a></li>
@@ -458,7 +466,7 @@
 					</div>
 
 					<div class="flex-1">
-						<h6 class="mb-9 font-roboto font-semibold text-lg text-white">Company</h6>
+						<h6 class="mb-3 font-roboto font-semibold text-lg text-white md:mb-9">Company</h6>
 
 						<ul class="flex flex-col gap-3 justify-items-start">
 							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">About Landio</a></li>
@@ -469,7 +477,7 @@
 					</div>
 
 					<div class="flex-1">
-						<h6 class="mb-9 font-roboto font-semibold text-lg text-white">Quick Links</h6>
+						<h6 class="mb-3 font-roboto font-semibold text-lg text-white md:mb-9">Quick Links</h6>
 
 						<ul class="flex flex-col gap-3 justify-items-start">
 							<li class="text-sm"><a href="" class="block text-gray-400 font-roboto font-medium text-sm">Premium Support</a></li>
